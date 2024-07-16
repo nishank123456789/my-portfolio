@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials - Nishank Uprety</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/testimonials.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <!-- Navigation for Large Screens -->
+   <header class="large-screen">
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Navigation for Small Screens -->
+<header class="small-screen">
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+        <button class="toggle-nav" onclick="toggleNav()">☰</button>
+        <ul class="dropdown-menu" id="dropdownMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+        </ul>
+    </nav>
+</header>
+    <section class="testimonials section">
+        <div class="container">
+            <h1 class="fade-in">Testimonials</h1>
+            <div class="testimonial-card fade-in delay-1">
+                <div class="testimonial-content">
+                    <p>"Nishank's work is truly exceptional. His attention to detail and creativity are unmatched. Highly recommend!"</p>
+                    <span class="author">Dipendra sir - assistant professor</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in delay-2">
+                <div class="testimonial-content">
+                    <p>"I'm impressed with Nishank's professionalism and technical skills. He delivered exactly what we needed on our major final project about feedback system on 2023."</p>
+                    <span class="author">Dev das - friend</span>
+                </div>
+            </div>
+            <div class="testimonial-card fade-in delay-3">
+                <div class="testimonial-content">
+                    <p>"Working with Nishank was a pleasure. His problem-solving abilities are top-notch and helped us a lot being junior."</p>
+                    <span class="author">pema chopa - senior </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nishank Uprety. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+
+</body>
+</html>

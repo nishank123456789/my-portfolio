@@ -1,0 +1,215 @@
+/* main.css */
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2; /* Light grey background */
+    line-height: 1.6;
+    font-size: 1rem;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Large Screen Navigation */
+.large-screen {
+    display: block; /* Show for large screens */
+}
+
+.large-screen nav {
+    background-color: #333; /* Dark background for header */
+    color: #fff;
+    padding: 1em 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s; /* Smooth transition for hiding/showing */
+}
+
+.large-screen nav ul {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+}
+
+.large-screen nav ul li {
+    margin-left: 1em;
+}
+
+.large-screen nav ul li:first-child {
+    margin-left: 0;
+}
+
+.large-screen nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+.large-screen nav ul li a:hover {
+    color: #ffc107; /* Yellow on hover */
+}
+
+/* Small Screen Navigation */
+.small-screen {
+    display: none; /* Hide for large screens */
+}
+
+.small-screen nav {
+    background-color: #333; /* Dark background for header */
+    color: #fff;
+    padding: 1em 0;
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s; /* Smooth transition for hiding/showing */
+}
+
+.small-screen nav ul {
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    display: none; /* Hide by default */
+    position: absolute;
+    top: 50px; /* Adjust position below the button */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 1em 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.small-screen nav ul.open {
+    display: flex; /* Show when open */
+}
+
+.small-screen nav ul li {
+    margin-bottom: 1em;
+}
+
+.small-screen nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    transition: color 0.3s;
+}
+
+.small-screen nav ul li a:hover {
+    color: #ffc107; /* Yellow on hover */
+}
+
+.toggle-nav {
+    display: none; /* Hide by default */
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1100; /* Higher z-index to overlay header */
+    background-color: #333;
+}
+
+.toggle-nav.open {
+    color: #ffc107; /* Yellow color when toggle is open */
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Sections */
+.section {
+    padding: 4em 0;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 6em 0;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1em;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1em;
+}
+
+/* About Section */
+.about-content {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1em;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed; /* Keep footer fixed at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .large-screen {
+        display: none; /* Hide large screen navigation */
+    }
+
+    .small-screen {
+        display: block; /* Show small screen navigation */
+    }
+
+    .small-screen nav ul {
+        transform: translateY(-100%);
+    }
+
+    .small-screen nav ul.open {
+        transform: translateY(0);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .toggle-nav {
+        display: block; /* Show menu button on small screens */
+    }
+}

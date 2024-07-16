@@ -1,0 +1,17 @@
+public_html/
+├── index.html
+├── skills.html
+├── projects.html
+├── testimonials.html
+├── wip.html
+├── styles/
+│   ├── home.css
+│   ├── main.css
+│   ├── projects.css
+│   ├── testimonials.css
+│   └── skills.css
+├── images/
+│   └── nishank.jpeg
+└── scripts/
+    ├── script.js
+    └── skills.js
